@@ -41,23 +41,4 @@ Install dependencies using:
 pip install geoip2 networkx matplotlib pandas numpy scikit-learn python-louvain tabulate neo4j
 
 
-## MaxMind GeoIP Data Usage
 
-The project uses the GeoLite2 City database from MaxMind to extract geographic coordinates from IP addresses.
-
-### Steps
-
-1. Download the GeoLite2-City.mmdb file from MaxMind  
-2. Store it locally or in Google Drive  
-3. Load the database in Python using the geoip2 library  
-
-### Example
-
-```python
-import geoip2.database
-
-reader = geoip2.database.Reader('GeoLite2-City.mmdb')
-
-response = reader.city(ip_address)
-latitude = response.location.latitude
-longitude = response.location.longitude
