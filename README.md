@@ -151,38 +151,38 @@ with driver.session() as session:
 ```
 
 ### Workflow
-Construct the graph using NetworkX
-Store nodes and relationships in Neo4j
-Query graph data when required
-Reconstruct the graph in NetworkX
-Perform clustering and analysis
+- Construct the graph using NetworkX
+- Store nodes and relationships in Neo4j
+- Query graph data when required
+- Reconstruct the graph in NetworkX
+- Perform clustering and analysis
 
 This process enables persistent storage, efficient querying, and scalable graph management.
 
 ### How to Run
-Install all required libraries
-Prepare the dataset containing IP addresses (CSV format)
-Download and place the GeoLite2-City.mmdb file
+- Install all required libraries
+- Prepare the dataset containing IP addresses (CSV format)
+- Download and place the GeoLite2-City.mmdb file
 (Optional) Install and start Neo4j database and configure credentials
-Update file paths for dataset and GeoIP database
-Execute the Python script
+- Update file paths for dataset and GeoIP database
+- Execute the Python script
 
 The system will read IP data, extract geolocation, construct the graph, and perform clustering and analysis. If Neo4j is enabled, the graph can be stored and queried from the database.
 
 ### Dataset
-CSV file containing IP addresses
-GeoLite2 database for geolocation
+- CSV file containing IP addresses
+- GeoLite2 database for geolocation
 
 ### Key Concepts
-Graph Theory
-Community Detection
-Spectral Clustering
-Network Simulation
+- Graph Theory
+- Community Detection
+- Spectral Clustering
+- Network Simulation
 
 ### Notes
-Requires GeoLite2 database from MaxMind
-Neo4j integration is optional but useful for persistence
-Large datasets require higher memory and computation resources
+- Requires GeoLite2 database from MaxMind
+- Neo4j integration is optional but useful for persistence
+- Large datasets require higher memory and computation resources
 
 ### License
 
