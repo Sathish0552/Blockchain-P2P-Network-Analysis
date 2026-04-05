@@ -37,7 +37,7 @@ The project uses the following Python libraries:
 
 Install dependencies using:
 
-```bash
+```python
 pip install geoip2 networkx matplotlib pandas numpy scikit-learn python-louvain tabulate neo4j
 
 
